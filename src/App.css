@@ -1,3 +1,8 @@
 body {
   background-color: rgb(17 24 39);
 }
+canvas {
+  display: block;
+
+  z-index: 1000 !important;
+}

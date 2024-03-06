@@ -21,8 +21,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 17 : 2}
-        position={isMobile ? [0, -2, -2.2] : [-1, -3, 1]}
+        scale={isMobile ? 4 : 2}
+        position={isMobile ? [3, -6.5, -5] : [-1, -3, 1]}
       />
     </mesh>
   );
@@ -57,12 +57,17 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [-14, 5.5, 17], fov: 40, near: 0.1, far: 1000 }}
+      camera={{
+        position: isMobile ? [-1, 4, 22] : [-14, 5.5, 17],
+        fov: 40,
+        near: 0.1,
+        far: 1000,
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
-        <Computers isMobile={isMobile} position={[0, 0, 0]} />
+        <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />

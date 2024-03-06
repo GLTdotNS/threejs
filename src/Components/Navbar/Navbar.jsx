@@ -48,7 +48,7 @@ const Navbar = () => {
        ${
          nav
            ? "fixed md:hidden left-0 top-[60px] w-[100%] h-auto z-10 border-r border-r-gray-900  ease-in-out duration-500"
-           : "ease-in-out w-[100%] h-[64px]  z-10 duration-500 fixed left-0  top-[-30%]"
+           : "ease-in-out w-[100%] h-[64px]  z-10 duration-500 fixed left-0  top-[-100%]"
        }
         `}
       >

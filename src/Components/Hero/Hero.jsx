@@ -41,9 +41,13 @@ const Hero = () => {
       >
         <div className="aspect-[1108/632] w-[69.25rem]  bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-40"></div>
       </div>
-      <div className="mt-[-50px] flex h-screen items-center justify-center z-64">
-        <section className="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+
+      <div className=" flex h-screen items-center justify-center z-64 ">
+        <section className="lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12  md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+            <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 ">
+              <Portfolio3D />
+            </div>
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
                 <span className="block  uppercase  text-slate-50">
@@ -81,10 +85,6 @@ const Hero = () => {
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 my-4">
-              <Portfolio3D />
             </div>
           </div>
         </section>
