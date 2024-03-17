@@ -5,7 +5,7 @@ import Portfolio3D from "../Canvas/Cube";
 
 const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900">
+    <div className="relative isolate overflow-hidden bg-gray-900 ">
       <svg
         className="absolute inset-0 -z-10 h-64 w-64 stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,red,transparent)]"
         aria-hidden="true"
@@ -43,21 +43,19 @@ const Hero = () => {
       </div>
 
       <div className=" flex h-screen items-center justify-center z-64 ">
-        <section className="lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="my-10 mx-auto max-w-7xl px-4 sm:mt-12  md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">
+        <section className="lg:mt-4  mt-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className=" lg:flex flex-col lg:flex-row">
             <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 ">
               <Portfolio3D />
             </div>
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
-                <span className="block  uppercase  text-slate-50">
-                  Georgi Tonkov
-                </span>
+                <span className="block  uppercase  text-slate-50">Georgi</span>
                 <span className="block  xl:inline  from-cyan-500 via-orange-400 to-blue-500 bg-gradient-to-r bg-clip-text text-transparent">
                   Web Developer
                 </span>
               </h1>
-              <p className="mt-3 text-base text-left text-slate-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 w-full text-base text-left text-slate-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 In short about me - a motivated and responsible person with a
                 passion for web application development. I am a completely
                 self-educated programmer and I have experience with the
@@ -76,7 +74,7 @@ const Hero = () => {
                     Github
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                <div className="mt-3 sm:mt-0 sm:ml-3 mb-36">
                   <a
                     href="#"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-800 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"

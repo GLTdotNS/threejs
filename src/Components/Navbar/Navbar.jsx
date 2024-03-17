@@ -1,69 +1,79 @@
-import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
+import { FaEnvelope, FaCog } from "react-icons/fa";
+import { GoProjectSymlink } from "react-icons/go";
+import { SiAboutdotme } from "react-icons/si";
+import { FaBlog } from "react-icons/fa";
 
-const Navbar = () => {
-  // State to manage the navbar's visibility
-  const [nav, setNav] = useState(false);
+import "./Navbar.css";
 
-  // Toggle function to handle the navbar's display
-  const handleNav = () => {
-    setNav(!nav);
+const BottomNavbar = () => {
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const profileRef = useRef();
+
+  const toggleProfileMenu = () => {
+    setShowProfileMenu(!showProfileMenu);
   };
 
-  // Array containing navigation items
-  const navItems = [
-    { id: 1, text: "Home" },
-    { id: 2, text: "Projects" },
-
-    { id: 4, text: "Blog" },
-    { id: 5, text: "Contacts" },
-  ];
-
   return (
-    <div
-      className="bg-transparent z-50 p-4 flex justify-between items-center w-full  mx-auto text-white"
-      style={{ zIndex: "9999" }}
-    >
-      <h1 className="w-full text-3xl font-bold text-[]">Kancho Lupcheff</h1>
+    <div className="bottom-navbar">
+      <Link to="/" className="nav-item">
+        <SiAboutdotme />
 
-      <ul className="hidden md:flex">
-        {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
-          >
-            {item.text}
-          </li>
-        ))}
-      </ul>
+        <span>About</span>
+      </Link>
 
-      {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-      </div>
-
-      {/* Mobile Navigation Menu */}
-      <ul
-        className={` bg-gray-800 
-       ${
-         nav
-           ? "fixed md:hidden left-0 top-[60px] w-[100%] h-auto z-10 border-r border-r-gray-900  ease-in-out duration-500"
-           : "ease-in-out w-[100%] h-[64px]  z-10 duration-500 fixed left-0  top-[-100%]"
-       }
-        `}
+      <div
+        onClick={toggleProfileMenu}
+        className="nav-item profile-item"
+        ref={profileRef}
       >
-        {/* Mobile Navigation Items */}
-        {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="p-4 border-b  hover:bg-gray-700 duration-300 hover:text-slate-100 cursor-pointer border-gray-600"
-          >
-            {item.text}
-          </li>
-        ))}
-      </ul>
+        <GoProjectSymlink />
+
+        <span>Projects</span>
+      </div>
+      {showProfileMenu && (
+        <div className="profile-menu">
+          <ul>
+            <li>
+              <Link to="/blog" className="profile-link">
+                NONCREATIVEBLOG
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/projects" className="profile-link">
+                VOLUSPA
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/blog" className="profile-link">
+                STRIVENEX
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link to="/contacts" className="profile-link">
+                SEETHEM
+              </Link>
+            </li>
+            <button onClick={toggleProfileMenu}>close</button>
+          </ul>
+        </div>
+      )}
+
+      <Link to="/settings" className="nav-item">
+        <FaBlog />
+
+        <span>Blog</span>
+      </Link>
+      <Link to="/messages" className="nav-item">
+        <FaEnvelope />
+        <span>Contacts</span>
+      </Link>
     </div>
   );
 };
 
-export default Navbar;
+export default BottomNavbar;

@@ -1,8 +1,18 @@
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease forwards;
+}
+
 body {
   background-color: rgb(17 24 39);
-}
-canvas {
-  display: block;
-
-  z-index: 1000 !important;
 }

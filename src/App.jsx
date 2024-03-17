@@ -1,20 +1,24 @@
-import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
 import Hero from "./Components/Hero/Hero";
-import Portfolio3D from "./Components/Canvas/Cube";
+import Blog from "./Components/Blog/Blog";
+import "./App.css";
+import BottomNavbar from "./Components/Navbar/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-    </>
+    <BrowserRouter>
+      <div>
+        <BottomNavbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/hero" element={<Hero />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
