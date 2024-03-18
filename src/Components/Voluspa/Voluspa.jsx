@@ -6,19 +6,21 @@ import {
   FaCss3Alt,
   FaHtml5,
 } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
 
 const ProjectPage = () => {
   return (
     <div className="markdown-body mx-auto max-w-3xl py-8 px-4 lg:px-0 ">
       <div className="flex items-center justify-center mb-8">
         <img
-          src="https://www.noncreativeblog.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner.ca584a8e.png&w=1920&q=75"
+          src="https://voluspa.noncreativeblog.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvoluspa.0c3d8755.png&w=2048&q=75"
           alt="Project Cover"
-          className="w-full rounded-lg shadow-lg"
+          className="w-full h-full rounded-lg shadow-lg"
         />
       </div>
       <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
-        NONCREATIVEBLOG
+        Völuspá
       </h1>
       <div className="flex justify-center items-center mb-4">
         <FaReact
@@ -33,11 +35,19 @@ const ProjectPage = () => {
           className="tech-icon text-4xl text-blue-500 mr-4"
           title="CSS3"
         />
-        {/* Add more icons for other technologies */}
+        <IoLogoVercel className="flex justify-center text-slate-300 bg-black p-2 ml-2 rounded-full text-4xl items-center " />
       </div>
       <p className="text-gray-300 text-lg mb-4">
-        As the primary contributor and developer for this project, I seamlessly
-        merged my skills in content creation and web development.
+        It is an inspiring translation of the epic poem Völuspá. This
+        translation, by Aigir Sverison and Yana Chankova, combines mastery and
+        devotion to the original text. The book tells of the prophecy of a
+        mysterious fortune-teller , who guides the reader through ancient times
+        and awakens in him the excitement and curiosity about the hidden stories
+        of the world. The content is enriched with symbolism and mysticism,
+        which make The Oracle's Prediction an incomparable literary work. It is
+        important to emphasize that this translation is subject to copyright,
+        ensuring respect for the intellectual property and work of the
+        translators.
       </p>
       <div className="ttext-gray-300  mb-4">
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
@@ -54,27 +64,26 @@ const ProjectPage = () => {
         <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
         <ul className="list-disc pl-6">
           <li>
-            Developed a personal blog using Next.js 13, showcasing proficiency
-            in modern web development technologies.
+            Developed an informative website dedicated to the Völuspá (Codex
+            Regius) with a user-friendly interface.
           </li>
           <li>
-            Implemented custom styling with CSS/SCSS for a unique and tailored
-            visual experience.
+            Implemented a feature allowing users to directly read the Völuspá on
+            the website.
           </li>
           <li>
-            Ensured complete freedom for customization, providing a platform to
-            express personal ideas and information.
+            Integrated a built-in dictionary to assist readers in understanding
+            complex words and expressions.
           </li>
           <li>
-            Prioritized user experience, allowing visitors to explore content
-            within their own web environment, avoiding reliance on off-the-shelf
-            platforms.
+            Please note that source code cannot be provided due to copyright
+            reasons
           </li>
         </ul>
       </div>
       <div className="flex justify-center items-center mb-24">
         <a
-          href="https://github.com/yourgithubusername"
+          href="https://github.com/GLTdotNS/strivenex"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
@@ -82,7 +91,7 @@ const ProjectPage = () => {
           <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
         </a>
         <a
-          href="https://www.noncreativeblog.net"
+          href="https://www.strivenex.com"
           target="_blank"
           rel="noopener noreferrer"
         >

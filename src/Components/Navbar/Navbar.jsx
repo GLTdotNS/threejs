@@ -4,7 +4,6 @@ import { FaEnvelope, FaCog } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import { SiAboutdotme } from "react-icons/si";
 import { FaBlog } from "react-icons/fa";
-
 import "./Navbar.css";
 
 const BottomNavbar = () => {
@@ -36,25 +35,41 @@ const BottomNavbar = () => {
         <div className="profile-menu">
           <ul>
             <li>
-              <Link to="/blog" className="profile-link">
+              <Link
+                onClick={toggleProfileMenu}
+                to="/blog"
+                className="profile-link"
+              >
                 NONCREATIVEBLOG
               </Link>
             </li>
             <li>
               {" "}
-              <Link to="/projects" className="profile-link">
+              <Link
+                onClick={toggleProfileMenu}
+                to="/voluspa"
+                className="profile-link"
+              >
                 VOLUSPA
               </Link>
             </li>
             <li>
               {" "}
-              <Link to="/blog" className="profile-link">
+              <Link
+                onClick={toggleProfileMenu}
+                to="/strive"
+                className="profile-link"
+              >
                 STRIVENEX
               </Link>
             </li>
             <li>
               {" "}
-              <Link to="/contacts" className="profile-link">
+              <Link
+                onClick={toggleProfileMenu}
+                to="/seethem"
+                className="profile-link"
+              >
                 SEETHEM
               </Link>
             </li>

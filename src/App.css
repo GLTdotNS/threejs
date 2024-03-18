@@ -16,3 +16,7 @@
 body {
   background-color: rgb(17 24 39);
 }
+
+.bullets {
+  list-style-type: circle !important;
+}

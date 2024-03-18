@@ -1,80 +1,81 @@
 import React from "react";
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-  FaReact,
-  FaCss3Alt,
-  FaHtml5,
-} from "react-icons/fa";
+import { FcLinux } from "react-icons/fc";
+import { FaGithub, FaExternalLinkAlt, FaPython } from "react-icons/fa";
+import { SiGnubash } from "react-icons/si";
+import { MdNetworkWifi3Bar } from "react-icons/md";
+
+import img from "./seethem.jpeg";
 
 const ProjectPage = () => {
   return (
     <div className="markdown-body mx-auto max-w-3xl py-8 px-4 lg:px-0 ">
       <div className="flex items-center justify-center mb-8">
         <img
-          src="https://www.noncreativeblog.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner.ca584a8e.png&w=1920&q=75"
+          src={img}
           alt="Project Cover"
-          className="w-full rounded-lg shadow-lg"
+          className="w-full h-full rounded-lg shadow-lg"
         />
       </div>
       <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
-        NONCREATIVEBLOG
+        SEETHEM
       </h1>
       <div className="flex justify-center items-center mb-4">
-        <FaReact
+        <FcLinux
           className="tech-icon text-4xl text-blue-500 mr-4"
           title="React"
         />
-        <FaHtml5
-          className="tech-icon text-4xl text-red-500 mr-4"
-          title="HTML5"
-        />
-        <FaCss3Alt
+        <FaPython
           className="tech-icon text-4xl text-blue-500 mr-4"
-          title="CSS3"
+          title="React"
         />
-        {/* Add more icons for other technologies */}
+        <SiGnubash
+          className="tech-icon text-4xl text-blue-500 mr-4"
+          title="React"
+        />
+        <MdNetworkWifi3Bar
+          className="tech-icon text-4xl text-blue-500 mr-4"
+          title="React"
+        />
       </div>
       <p className="text-gray-300 text-lg mb-4">
-        As the primary contributor and developer for this project, I seamlessly
-        merged my skills in content creation and web development.
+        A small tool / script to allow you to access your wifi network. It works
+        by spoofing your MAC address and connecting you to the router. It aims
+        to show the connected devices on your private network.
       </p>
       <div className="ttext-gray-300  mb-4">
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
           Technologies Used:
         </h2>
         <ul className="text-gray-300  list-disc pl-6">
-          <li>Frontend - Next.js</li>
-          <li>Backend - Backendless Solution</li>
-          <li>Styling - Pure CSS/SCSS</li>
-          <li>CMS - Headless CMS</li>
+          <li>Linux</li>
+          <li>Python</li>
+          <li>Computer Networks</li>
+          <li>Bash</li>
         </ul>
       </div>
       <div className="text-gray-300  mb-4">
         <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
         <ul className="list-disc pl-6">
           <li>
-            Developed a personal blog using Next.js 13, showcasing proficiency
-            in modern web development technologies.
+            Created a small tool/script to facilitate access to WiFi networks by
+            spoofing MAC addresses and connecting to routers.
           </li>
           <li>
-            Implemented custom styling with CSS/SCSS for a unique and tailored
-            visual experience.
+            Aims to display connected devices on private networks, enhancing
+            network management and security.
           </li>
           <li>
-            Ensured complete freedom for customization, providing a platform to
-            express personal ideas and information.
+            Indicates a focus on network administration and security concerns.
           </li>
           <li>
-            Prioritized user experience, allowing visitors to explore content
-            within their own web environment, avoiding reliance on off-the-shelf
-            platforms.
+            Provides a practical solution for managing and monitoring devices on
+            a private network.
           </li>
         </ul>
       </div>
       <div className="flex justify-center items-center mb-24">
         <a
-          href="https://github.com/yourgithubusername"
+          href="https://github.com/GLTdotNS/strivenex"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
@@ -82,7 +83,7 @@ const ProjectPage = () => {
           <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
         </a>
         <a
-          href="https://www.noncreativeblog.net"
+          href="https://www.strivenex.com"
           target="_blank"
           rel="noopener noreferrer"
         >
