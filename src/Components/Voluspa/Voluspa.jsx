@@ -39,7 +39,7 @@ const ProjectPage = () => {
       </div>
       <p className="text-gray-300 text-lg mb-4">
         It is an inspiring translation of the epic poem Völuspá. This
-        translation, by Aigir Sverison and Yana Chankova, combines mastery and
+        translation, by Aegir Sverison and Yana Chankova, combines mastery and
         devotion to the original text. The book tells of the prophecy of a
         mysterious fortune-teller , who guides the reader through ancient times
         and awakens in him the excitement and curiosity about the hidden stories
