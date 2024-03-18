@@ -18,7 +18,7 @@ const BottomNavbar = () => {
   };
 
   return (
-    <div className="bottom-navbar">
+    <div className="orbitron bottom-navbar">
       <Link to="/" className="nav-item">
         <SiAboutdotme />
 
@@ -35,7 +35,7 @@ const BottomNavbar = () => {
         <span>Projects</span>
       </div>
       {showProfileMenu && (
-        <div className="profile-menu">
+        <div className="profile-menu font-bold">
           <ul>
             <li>
               <Link
