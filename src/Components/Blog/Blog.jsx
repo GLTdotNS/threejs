@@ -74,7 +74,7 @@ const ProjectPage = () => {
       </div>
       <div className="flex justify-center items-center mb-24">
         <a
-          href="https://github.com/yourgithubusername"
+          href="https://github.com/GLTdotNS/MyBlog"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"

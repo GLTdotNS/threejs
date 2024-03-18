@@ -83,15 +83,7 @@ const ProjectPage = () => {
       </div>
       <div className="flex justify-center items-center mb-24">
         <a
-          href="https://github.com/GLTdotNS/strivenex"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-4"
-        >
-          <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
-        <a
-          href="https://www.strivenex.com"
+          href="https://voluspa.noncreativeblog.net/"
           target="_blank"
           rel="noopener noreferrer"
         >

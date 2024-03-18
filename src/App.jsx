@@ -15,9 +15,8 @@ const App = () => {
         <BottomNavbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/hero" element={<Hero />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/strive" element={<Strive />} />
+          <Route path="/strivenex" element={<Strive />} />
           <Route path="/voluspa" element={<Voluspa />} />
           <Route path="/seethem" element={<Seethem />} />
         </Routes>

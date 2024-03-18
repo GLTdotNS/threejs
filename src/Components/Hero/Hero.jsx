@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="aspect-[1108/632] w-[69.25rem]  bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-40"></div>
       </div>
       {!isLoaded ? (
-        <div className="flex items-center justify-center fixed top-0 left-0 w-full bg-indigo-400 z-50  h-screen bg-gray-900">
+        <div className="flex items-center justify-center fixed top-0 left-0 w-full h-screen bg-gray-900  z-50">
           <div className="flex flex-col items-center text-center">
             <svg
               className="animate-spin -ml-1 mr-3 h-20 w-20 text-white"
@@ -70,9 +70,14 @@ const Hero = () => {
                 strokeWidth="4"
               ></circle>
               <path
-                className="opacity-75"
+                className="text-blue-500"
                 fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A8.001 8.001 0 0120 12h4a12 12 0 00-4-9.162V4c-3.313 0-6.054 2.135-7.071 5.09L8 10.334l2 2.457v-5.43l-1.5 1.5-3 3.671z"
+                d="M12 20a8 8 0 100-16 8 8 0 000 16z"
+              ></path>
+              <path
+                className="text-white"
+                fill="currentColor"
+                d="M15.316 8.5a1.79 1.79 0 00-1.746-1.368l-.146-.002c-.7 0-1.26.505-1.28 1.152l-.003.16c0 .289.118.559.324.755.207.196.482.305.773.305.332 0 .639-.138.852-.372.213-.234.318-.537.284-.843zm3.53 2.05a5.45 5.45 0 00-1.34-.172c-.636-.037-1.175.378-1.19.922v.112c0 .169.065.331.183.453.118.123.28.192.451.192.192 0 .371-.08.502-.224a.72.72 0 01.146-.146 1.675 1.675 0 00.452-.69c.039-.168-.06-.339-.219-.45zM13.975 13c0 .646.53 1.17 1.178 1.17.646 0 1.177-.524 1.177-1.17s-.53-1.17-1.177-1.17c-.648 0-1.178.524-1.178 1.17z"
               ></path>
             </svg>
           </div>
@@ -87,19 +92,21 @@ const Hero = () => {
               <Portfolio3D />
             </div>
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl  font-extrabold sm:text-5xl md:text-6xl">
-                <span className="block  uppercase  text-slate-50">Georgi</span>
+              <h1 className="text-4xl  font-extrabold sm:text-5xl md:text-5xl">
+                <span className="block  uppercase  text-slate-50">
+                  Hi, I am Georgi
+                </span>
                 <span className="block  xl:inline  from-cyan-500 via-orange-400 to-blue-500 bg-gradient-to-r bg-clip-text text-transparent">
-                  Web Developer
+                  Front-end Developer
                 </span>
               </h1>
 
               <p className="mt-3 w-full text-base text-left text-slate-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                In short about me - A motivated and responsible person with a
-                passion for web application development. I am a self-educated
-                programmer with experience with Javascript (including NextJS and
-                React) and Python. In my free time, I write articles on my
-                personal blog about Scandinavian mythology
+                In short about me - A dedicated and passionate front-end
+                developer driven to create innovative web applications. I am a
+                self-educated programmer with experience with Javascript
+                (including NextJS and React) and Python. In my free time, I
+                write articles on my personal blog about Scandinavian mythology
               </p>
 
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -114,7 +121,8 @@ const Hero = () => {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3 mb-36">
                   <a
-                    href="#"
+                    download
+                    href="./Tonkov.pdf"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-800 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Download CV
