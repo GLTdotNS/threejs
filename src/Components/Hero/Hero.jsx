@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="aspect-[1108/632] w-[69.25rem]  bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-40"></div>
       </div>
       {!isLoaded ? (
-        <div className="flex items-center justify-center h-screen bg-gray-900">
+        <div className="flex items-center justify-center fixed top-0 left-0 w-full bg-indigo-400 z-50  h-screen bg-gray-900">
           <div className="flex flex-col items-center text-center">
             <svg
               className="animate-spin -ml-1 mr-3 h-20 w-20 text-white"
