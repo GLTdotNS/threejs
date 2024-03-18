@@ -44,10 +44,9 @@ const ProjectPage = () => {
         mysterious fortune-teller , who guides the reader through ancient times
         and awakens in him the excitement and curiosity about the hidden stories
         of the world. The content is enriched with symbolism and mysticism,
-        which make The Oracle's Prediction an incomparable literary work. It is
-        important to emphasize that this translation is subject to copyright,
-        ensuring respect for the intellectual property and work of the
-        translators.
+        which make Völuspá an incomparable literary work. It is important to
+        emphasize that this translation is subject to copyright, ensuring
+        respect for the intellectual property and work of the translators.
       </p>
       <div className="ttext-gray-300  mb-4">
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
