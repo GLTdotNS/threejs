@@ -19,24 +19,20 @@ const ProjectPage = () => {
       <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
         SEETHEM
       </h1>
-      <div className="flex justify-center items-center mb-4">
-        <FcLinux
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <FaPython
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <SiGnubash
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <MdNetworkWifi3Bar
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
+      <div className="flex justify-center items-center mb-12">
+        <a
+          href="https://github.com/GLTdotNS/seethem"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 flex flex-col items-center text-slate-300 hover:text-orange-100 underline"
+        >
+          <span className="text-center">
+            <FaGithub className="icon text-3xl text-gray-300 " />
+          </span>
+          <span className="text-center">Source</span>
+        </a>
       </div>
+
       <p className="text-gray-300 text-lg mb-4">
         A small tool / script to allow you to access your wifi network. It works
         by spoofing your MAC address and connecting you to the router. It aims
@@ -46,6 +42,24 @@ const ProjectPage = () => {
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
           Technologies Used:
         </h2>
+        <div className="flex justify-start items-center mb-4">
+          <FcLinux
+            className="tech-icon text-4xl text-blue-500 mr-4"
+            title="React"
+          />
+          <FaPython
+            className="tech-icon text-4xl  rounded-full text-yellow-300 mr-4"
+            title="React"
+          />
+          <SiGnubash
+            className="tech-icon text-4xl text-slate-100 mr-4"
+            title="React"
+          />
+          <MdNetworkWifi3Bar
+            className="tech-icon text-4xl text-slate-100 mr-4"
+            title="React"
+          />
+        </div>
         <ul className="text-gray-300  list-disc pl-6">
           <li>Linux</li>
           <li>Python</li>
@@ -55,7 +69,7 @@ const ProjectPage = () => {
       </div>
       <div className="text-gray-300  mb-4">
         <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 mb-24">
           <li>
             Created a small tool/script to facilitate access to WiFi networks by
             spoofing MAC addresses and connecting to routers.
@@ -72,16 +86,6 @@ const ProjectPage = () => {
             a private network.
           </li>
         </ul>
-      </div>
-      <div className="flex justify-center items-center mb-24">
-        <a
-          href="https://github.com/GLTdotNS/seethem"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-4"
-        >
-          <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
       </div>
     </div>
   );

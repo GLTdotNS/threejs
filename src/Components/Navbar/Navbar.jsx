@@ -44,7 +44,7 @@ const BottomNavbar = () => {
                 className="profile-link flex items-center"
               >
                 <span style={{ marginRight: "0.5rem" }}>
-                  <FaReact color="blue" />
+                  <FaReact size={25} className="text-sky-500" />
                 </span>
                 <span>NONCREATIVEBLOG</span>
               </Link>
@@ -56,7 +56,7 @@ const BottomNavbar = () => {
                 className="profile-link flex items-center"
               >
                 <span style={{ marginRight: "0.5rem" }}>
-                  <FaReact color="blue" />
+                  <FaReact size={25} className="text-sky-500" />
                 </span>
                 <span className="uppercase">Völuspá</span>
               </Link>
@@ -68,7 +68,7 @@ const BottomNavbar = () => {
                 className="profile-link flex items-center"
               >
                 <span style={{ marginRight: "0.5rem" }}>
-                  <FaReact color="blue" />
+                  <FaReact size={25} className="text-sky-500" />
                 </span>
                 <span>STRIVENEX</span>
               </Link>
@@ -80,7 +80,7 @@ const BottomNavbar = () => {
                 className="profile-link flex items-center"
               >
                 <span style={{ marginRight: "0.5rem" }}>
-                  <FaPython color="yellow" />
+                  <FaPython size={25} className="text-yellow-300" />
                 </span>
                 <span>SEETHEM</span>
               </Link>

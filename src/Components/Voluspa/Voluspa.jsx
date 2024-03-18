@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaExternalLinkAlt,
-  FaReact,
-  FaCss3Alt,
-  FaHtml5,
-} from "react-icons/fa";
+import { FaExternalLinkAlt, FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 
@@ -19,24 +13,23 @@ const ProjectPage = () => {
           className="w-full h-full rounded-lg shadow-lg"
         />
       </div>
-      <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
-        Völuspá
-      </h1>
-      <div className="flex justify-center items-center mb-4">
-        <FaReact
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <FaHtml5
-          className="tech-icon text-4xl text-red-500 mr-4"
-          title="HTML5"
-        />
-        <FaCss3Alt
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="CSS3"
-        />
-        <IoLogoVercel className="flex justify-center text-slate-300 bg-black p-2 ml-2 rounded-full text-4xl items-center " />
+      <div className="flex justify-center items-center mb-12 hover:text-orange-100">
+        <h1 className="text-4xl font-bold text-gray-300 text-center mr-4">
+          Völuspá
+        </h1>
+        <a
+          href="https://voluspa.noncreativeblog.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-slate-300 ml-2 hover:text-orange-100"
+        >
+          <span className="text-center text-lg underline">Website</span>
+          <span className="text-center text-lg ml-1">
+            <FaExternalLinkAlt className="icon text-lg text-gray-300 hover:text-orange-100" />
+          </span>
+        </a>
       </div>
+
       <p className="text-gray-300 text-lg mb-4">
         It is an inspiring translation of the epic poem Völuspá. This
         translation, by Aegir Sverison and Yana Chankova, combines mastery and
@@ -52,6 +45,21 @@ const ProjectPage = () => {
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
           Technologies Used:
         </h2>
+        <div className="flex justify-start items-center mb-4">
+          <FaReact
+            className="tech-icon text-4xl text-sky-500 mr-4"
+            title="React"
+          />
+          <FaHtml5
+            className="tech-icon text-4xl text-red-500 mr-4"
+            title="HTML5"
+          />
+          <FaCss3Alt
+            className="tech-icon text-4xl text-blue-500 mr-4"
+            title="CSS3"
+          />
+          <IoLogoVercel className="flex justify-center text-slate-300 bg-black p-2 ml-2 rounded-full text-4xl items-center " />
+        </div>
         <ul className="text-gray-300  list-disc pl-6">
           <li>Frontend - Next.js</li>
           <li>Backend - Backendless Solution</li>
@@ -61,7 +69,7 @@ const ProjectPage = () => {
       </div>
       <div className="text-gray-300  mb-4">
         <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 mb-24">
           <li>
             Developed an informative website dedicated to the Völuspá (Codex
             Regius) with a user-friendly interface.
@@ -79,15 +87,6 @@ const ProjectPage = () => {
             reasons
           </li>
         </ul>
-      </div>
-      <div className="flex justify-center items-center mb-24">
-        <a
-          href="https://voluspa.noncreativeblog.net/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaExternalLinkAlt className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
       </div>
     </div>
   );

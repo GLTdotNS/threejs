@@ -22,14 +22,32 @@ const ProjectPage = () => {
       <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
         STRIVENEX
       </h1>
-      <div className="flex justify-center items-center mb-4">
-        <FaReact
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <SiTailwindcss className="flex justify-center text-sky-500 text-4xl items-center " />
-        <IoLogoVercel className="flex justify-center text-slate-300 bg-black p-2 ml-2 rounded-full text-4xl items-center " />
+      <div className="flex justify-center items-center mb-12">
+        <a
+          href="https://github.com/GLTdotNS/strivenex"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 flex flex-col items-center text-slate-300 hover:text-orange-100 underline"
+        >
+          <span className="text-center">
+            <FaGithub className="icon text-lg text-gray-300 " />
+          </span>
+          <span className="text-center">Source</span>
+        </a>
+
+        <a
+          href="https://www.strivenex.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 flex flex-col items-center text-slate-300 ml-2 hover:text-orange-100 underline"
+        >
+          <span className="text-center">
+            <FaExternalLinkAlt className="icon text-lg text-gray-300 " />
+          </span>
+          <span className="text-center">Website</span>
+        </a>
       </div>
+
       <p className="text-gray-300 text-lg mb-4">
         Strivene­x acts as my personal freelance­ platform, allowing me to
         establish connections with clie­nts. This repository stands as a central
@@ -40,6 +58,14 @@ const ProjectPage = () => {
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
           Technologies Used:
         </h2>
+        <div className="flex justify-start items-center mb-4">
+          <FaReact
+            className="tech-icon text-4xl text-sky-500 mr-4"
+            title="React"
+          />
+          <SiTailwindcss className="flex justify-center text-sky-500 text-4xl items-center " />
+          <IoLogoVercel className="flex justify-center text-slate-300 bg-black p-2 ml-2 rounded-full text-4xl items-center " />
+        </div>
         <ul className="text-gray-300  list-disc pl-6">
           <li>Frontend - Next.js</li>
           <li>Backend - Backendless Solution</li>
@@ -49,7 +75,7 @@ const ProjectPage = () => {
       </div>
       <div className="text-gray-300  mb-4">
         <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 mb-24">
           <li>
             Client-Me Connection: Seamless relationship with clients for project
             work.
@@ -63,23 +89,6 @@ const ProjectPage = () => {
             industry standards.
           </li>
         </ul>
-      </div>
-      <div className="flex justify-center items-center mb-24">
-        <a
-          href="https://github.com/GLTdotNS/strivenex"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-4"
-        >
-          <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
-        <a
-          href="https://www.strivenex.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaExternalLinkAlt className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
       </div>
     </div>
   );

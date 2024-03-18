@@ -20,29 +20,54 @@ const ProjectPage = () => {
       <h1 className="text-4xl font-bold text-gray-300 mb-4 text-center">
         NONCREATIVEBLOG
       </h1>
-      <div className="flex justify-center items-center mb-4">
-        <FaReact
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="React"
-        />
-        <FaHtml5
-          className="tech-icon text-4xl text-red-500 mr-4"
-          title="HTML5"
-        />
-        <FaCss3Alt
-          className="tech-icon text-4xl text-blue-500 mr-4"
-          title="CSS3"
-        />
-        {/* Add more icons for other technologies */}
+      <div className="flex justify-center items-center mb-12">
+        <a
+          href="https://github.com/GLTdotNS/MyBlog"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 flex flex-col items-center text-slate-300 hover:text-orange-100 underline"
+        >
+          <span className="text-center">
+            <FaGithub className="icon text-lg text-gray-300 " />
+          </span>
+          <span className="text-center">Source</span>
+        </a>
+
+        <a
+          href="https://www.noncreativeblog.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 flex flex-col items-center text-slate-300 ml-2 hover:text-orange-100 underline"
+        >
+          <span className="text-center">
+            <FaExternalLinkAlt className="icon text-lg text-gray-300 " />
+          </span>
+          <span className="text-center">Website</span>
+        </a>
       </div>
       <p className="text-gray-300 text-lg mb-4">
         As the primary contributor and developer for this project, I seamlessly
         merged my skills in content creation and web development.
       </p>
-      <div className="ttext-gray-300  mb-4">
+      <div className="text-gray-300  mb-4">
         <h2 className="text-gray-300  text-2xl font-bold mb-2">
           Technologies Used:
         </h2>
+        <div className="flex justify-start items-center mb-4">
+          <FaReact
+            className="tech-icon text-4xl text-sky-500 mr-4"
+            title="React"
+          />
+          <FaHtml5
+            className="tech-icon text-4xl text-red-500 mr-4"
+            title="HTML5"
+          />
+          <FaCss3Alt
+            className="tech-icon text-4xl text-blue-500 mr-4"
+            title="CSS3"
+          />
+          {/* Add more icons for other technologies */}
+        </div>
         <ul className="text-gray-300  list-disc pl-6">
           <li>Frontend - Next.js</li>
           <li>Backend - Backendless Solution</li>
@@ -51,8 +76,8 @@ const ProjectPage = () => {
         </ul>
       </div>
       <div className="text-gray-300  mb-4">
-        <h2 className="text-2xl font-bold mb-2">Project Highlights:</h2>
-        <ul className="list-disc pl-6">
+        <h2 className="text-2xl font-bold mb-4">Project Highlights:</h2>
+        <ul className="list-disc pl-6 mb-24">
           <li>
             Developed a personal blog using Next.js 13, showcasing proficiency
             in modern web development technologies.
@@ -71,23 +96,6 @@ const ProjectPage = () => {
             platforms.
           </li>
         </ul>
-      </div>
-      <div className="flex justify-center items-center mb-24">
-        <a
-          href="https://github.com/GLTdotNS/MyBlog"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mr-4"
-        >
-          <FaGithub className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
-        <a
-          href="https://www.noncreativeblog.net"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaExternalLinkAlt className="icon text-3xl text-gray-600 hover:text-gray-300" />
-        </a>
       </div>
     </div>
   );

@@ -88,7 +88,7 @@ const Hero = () => {
       <div className=" flex h-screen items-center justify-center z-64 ">
         <section className="lg:mt-4  mt-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className=" lg:flex flex-col lg:flex-row">
-            <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 ">
+            <div className="lg:inset-y-0 lg:right-0 lg:w-1/2 cursor-move">
               <Portfolio3D />
             </div>
             <div className="sm:text-center lg:text-left">
