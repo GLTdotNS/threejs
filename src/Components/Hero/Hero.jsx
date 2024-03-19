@@ -53,33 +53,11 @@ const Hero = () => {
         <div className="aspect-[1108/632] w-[69.25rem]  bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-40"></div>
       </div>
       {!isLoaded ? (
-        <div className="flex items-center justify-center fixed top-0 left-0 w-full h-screen bg-gray-900  z-50">
-          <div className="flex flex-col items-center text-center">
-            <svg
-              className="animate-spin -ml-1 mr-3 h-20 w-20 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="text-blue-500"
-                fill="currentColor"
-                d="M12 20a8 8 0 100-16 8 8 0 000 16z"
-              ></path>
-              <path
-                className="text-white"
-                fill="currentColor"
-                d="M15.316 8.5a1.79 1.79 0 00-1.746-1.368l-.146-.002c-.7 0-1.26.505-1.28 1.152l-.003.16c0 .289.118.559.324.755.207.196.482.305.773.305.332 0 .639-.138.852-.372.213-.234.318-.537.284-.843zm3.53 2.05a5.45 5.45 0 00-1.34-.172c-.636-.037-1.175.378-1.19.922v.112c0 .169.065.331.183.453.118.123.28.192.451.192.192 0 .371-.08.502-.224a.72.72 0 01.146-.146 1.675 1.675 0 00.452-.69c.039-.168-.06-.339-.219-.45zM13.975 13c0 .646.53 1.17 1.178 1.17.646 0 1.177-.524 1.177-1.17s-.53-1.17-1.177-1.17c-.648 0-1.178.524-1.178 1.17z"
-              ></path>
-            </svg>
+        <div className="flex items-center justify-center fixed top-0 left-0 w-full h-screen bg-gray-900 z-50">
+          <div className="flex flex-col items-center text-center loading">
+            <div class="spinner"></div>
+            <p>Please wait</p>
+            <p>My design is a bit unresponsive at the moment...</p>
           </div>
         </div>
       ) : (
