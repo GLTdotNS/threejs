@@ -14,6 +14,10 @@
   z-index: 100000;
   border-radius: 20px 20px 0px 0px;
 }
+.active {
+  text-shadow: 0 0 1ex rgba(51, 255, 51, 1),
+    0px 5px 24px rgba(255, 255, 255, 0.8);
+}
 
 .nav-item {
   text-align: center;
@@ -60,7 +64,7 @@
   right: 0;
   padding: 12px;
 }
-.profile-item.active .profile-menu {
+.profile-item .profile-menu {
   display: block;
   padding: 5%;
 }

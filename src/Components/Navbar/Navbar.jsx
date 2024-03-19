@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaEnvelope, FaCog } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
@@ -11,6 +11,17 @@ import "./Navbar.css";
 
 const BottomNavbar = () => {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
+  useEffect(() => {
+    const btns = document.getElementsByClassName("nav-item");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  }, []);
+
   const profileRef = useRef();
 
   const toggleProfileMenu = () => {
@@ -19,7 +30,11 @@ const BottomNavbar = () => {
 
   return (
     <div className="orbitron bottom-navbar">
-      <Link to="/" className="nav-item">
+      <Link
+        to="/"
+        className="nav-item active"
+        onClick={() => setShowProfileMenu(false)}
+      >
         <SiAboutdotme />
 
         <span>About</span>
